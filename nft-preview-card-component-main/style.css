@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --p-color: hsl(215, 51%, 70%);
+    --line-color: hsl(215, 32%, 27%);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: var(--main-bg);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+.card{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    width: 29rem;
+    height: 52rem;
+    border-radius: 1.6rem;
+    background: var(--card-bg);
+    
+}
+.main-img{
+    cursor: pointer;
+    
+    margin: 2rem 2rem 1rem 2rem;
+    width: 25rem;
+    border-radius: 0.6rem;
+}
+
+
+.card h1{
+    font-weight: 600;
+    color: #fff;
+    margin: 0.8rem 2rem;
+}
+.card h1:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%) ;
+}
+.card p{
+    color: var(--p-color) ;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 0.8rem 2rem;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+}
+.card .icon-img{
+    float: left;
+    margin: 1rem 0;
+    margin-left: 2rem;
+    width: 1rem;
+}
+.icon .icon-p{
+    color: hsl(178, 100%, 50%);
+    font-size: 1.5rem;
+    margin: 0.8rem 0.8rem;
+}
+.icon .clock-img{
+    float: left;
+    margin: 1rem 0;
+    margin-left: 6rem;
+    width: 1rem;
+}
+.icon .clock-p{
+    color: hsl(215, 51%, 70%);
+    font-size: 1.5rem;
+    margin: 0.8rem 0.5rem;
+}
+hr{
+    width: 80%;
+    margin:1rem 2rem;
+    border-width: 0;
+    border: 1px solid var(--line-color);
+    background: var(--line-color);
+    border-radius: 2rem;
+}
+.card .avatar-img{
+    float: left;
+    margin: 1rem 1rem 1rem 2rem;
+    width: 3rem;
+}
+.avatar .icon-p{
+    color: hsl(215, 51%, 70%);
+    font-size: 1.4rem;
+    margin: 1.5rem 0.5rem;
+}
+.icon-p span{
+    color: #fff;
+}
+.icon-p span:hover{
+    cursor: pointer;
+    color : hsl(178, 100%, 50%);
+}
